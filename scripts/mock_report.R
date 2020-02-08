@@ -40,7 +40,6 @@ n_sale_per_item <- sale_data %>%
   summarise("total" = n())
   
 
-
 item_sale_visual <- plot_ly(
   data = total_sales_per_item,
   x = ~item_id,

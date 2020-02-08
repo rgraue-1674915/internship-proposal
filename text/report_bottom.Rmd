@@ -1,0 +1,27 @@
+---
+title: "report_bottom"
+author: "Ryan Graue"
+date: "2/7/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(dplyr)
+library(tidyverse)
+library(plotly)
+library(anchors)
+library(kableExtra)
+source("../scripts/mock_report.R")
+```
+I chose this example more as a proof of concept. With more data, the creation of more complex and meaningful visualizations becomes more possible. And I have done many of these more complex visualizations in my classes at school.
+
+We can then break it down further by looking creating a table of item sales specifically.
+
+```{r echo = F}
+kable(total_sales_per_item) %>%
+  kable_styling()
+```
+
+Again I just want to say that this anaylization did not go as in depth as possible. I just wanted to use it as a proof of cencept by attempting to incorporate all methods of a report.
