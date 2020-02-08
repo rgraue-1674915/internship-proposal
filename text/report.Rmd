@@ -1,0 +1,38 @@
+---
+title: "Mock Report"
+author: "Ryan Graue"
+date: "2/7/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(dplyr)
+library(tidyverse)
+library(plotly)
+library(anchors)
+source("../scripts/mock_report.R")
+```
+
+## Mock Financial Report
+
+### Starting Data
+```{r, echo = F}
+kable(sale_data)
+kable(custy_data)
+kable(item_data)
+```
+
+The data started out in three seperate data tables hosted by mongoDB. It was then brought into R using the mongoLite package, and turned into r dataframes, to begin the data analysis. Bare in mind that this is completely made up data. Meeaning that it in real world applications there would be tens of thousands of onjects with many more fields, allowing for much more complex analysis and solutions.
+
+## Analysis
+
+For this example we can look at very basic analysis for this infomration on sales. Such as the total number of sales, being `r nrow(sale_data)`. With `r nrow(custy_data)` customers contributing a total of $`r total_sales `.
+
+We can then dive deeper into the data. For example a table bar chart of number of sales per item.
+
+```{r, echo=F}
+item_sale_visual
+```
+
