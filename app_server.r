@@ -38,8 +38,13 @@ server <- function(input, output, session) {
                 )
       ),
       tabItem(tabName = "school",
-              includeHTML("text/school.html")
-              #includeHTML("imgs/UWUnofficialTranscript.pdf")
+              includeHTML("text/school.html"),
+              renderImage({
+                list(src = "imgs/transcript.PNG",
+                     contentType = "image/png",
+                     alt = "Transcript")
+              }, deleteFile = F)
+             
       )
     )
   })
