@@ -1,8 +1,8 @@
 ---
-title: "Mock Report"
-author: "Ryan Graue"
-date: "2/7/2020"
-output: html_document
+output:
+   html_document:
+      css: myStyle.css
+
 ---
 
 
@@ -59,7 +59,7 @@ output: html_document
 <tbody>
   <tr>
    <td style="text-align:left;"> C97262751 </td>
-   <td style="text-align:left;"> Ryan Graue4259854941 </td>
+   <td style="text-align:left;"> Ryan Graue </td>
    <td style="text-align:right;"> 4259844941 </td>
    <td style="text-align:left;"> 5004 17th ave NE </td>
   </tr>
@@ -116,14 +116,10 @@ output: html_document
 </tbody>
 </table>
 
-The data started out in three seperate data tables hosted by mongoDB. It was then brought into R using the mongoLite package, and turned into r dataframes, to begin the data analysis. Bare in mind that this is completely made up data. Meeaning that it in real world applications there would be tens of thousands of onjects with many more fields, allowing for much more complex analysis and solutions.
+The data started out in three separate data tables hosted by mongoDB. It was then brought into R using the mongoLite package, and turned into r dataframes, to begin the data analysis. Bare in mind that this is completely made up data. Meaning that it in real world applications there would be tens of thousands of objects with many more fields, allowing for much more complex analysis and solutions.
 
 ## Analysis
 
-For this example we can look at very basic analysis for this infomration on sales. Such as the total number of sales, being 5. With 4 customers contributing a total of $330.95.
+For this example we can look at very basic analysis for this information on sales. Such as the total number of sales, being 5. With 4 customers contributing a total of $330.95.
 
 We can then dive deeper into the data. For example a table bar chart of number of sales per item.
-
-
-
-

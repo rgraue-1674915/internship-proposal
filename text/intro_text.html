@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet", type="text/css" href="../www/mystyle.css">
     <meta charset="utf-8">
     <title></title>
   </head>
+
+  <style media="screen">
+  @font-face {
+    font-family: headerFont;
+    src: url("../fonts/Raleway-Black.ttf");
+  }
+  @font-face {
+    font-family: bodyFont
+    src:url("../fonts/Raleway-ExtraLight.ttf");
+  }
+    h1{
+      font-family: headerFont;
+      font-size: 50px;
+    }
+    h2{
+      font-family: headerFont;
+      font-size: 38px;
+    }
+    p{
+      font-family: bodyFont;
+      font-size: 16px;
+    }
+    li{
+      font-family: bodyFont;
+      font-size: 16px;
+    }
+  </style>
+  <div id = "introBody">
   <body>
-    <h1 class="header">Ryan Graue Internship Proposal</h1>
-    <div class="body">
+    <h1>Ryan Graue Internship Proposal</h1>
       <h2>Informatics</h2>
-      <p>
+      <p >
         The analyzation, interpretation, and managment of data and information throughout
         its entire lifecycle to solve, create, and display tangible solutions.
       </p>
@@ -36,14 +62,13 @@
           <li>Statistical analysis and display using R and Python</li>
           <li>Create R shiny app sites</li>
           <li>MongoDB for cloud sharing databases and clusters</li>
-          <li>Ability to learn quickly</li>
-          <li>If all else; a worker</li>
+          <li>Knowledge of how to learn</li>
         </ul>
         <h2>Project ideas/daily operations</h2>
         <ul>
-          <li>Creat new; POS like, interface for service intake and bike/ski demo</li>
-          <li>Create statistical reports and data visualizations to accompany</li>
-          <li>Data entry and cleaning</li>
+          <li>Simple statistical analysis of data</li>
+          <li>Create visualizations based on said analysis</li>
+          <li>Data collection, entry, and cleaning</li>
           <li>Use Data to answer questions</li>
         </ul>
         <h2>Time Frame</h2>
@@ -60,9 +85,9 @@
               </li>
               <li>Start Summer 2020.
                 <p>
-                  This of course would forfeit my option of going abroad for the Summer
-                  and fall quarter. However, if this time frame seems more fruitful and
-                  appealing to evo, then I honestly would rather start ealrier then later.
+                  If evo has a place for me, I could start once my duties in the shop are not needed any more.
+                  This of course would also allow me to focus my skills and learnings towards objectives and skills
+                  that evo deems more useful and needed.
                 </p>
               </li>
             </ol>
@@ -77,7 +102,14 @@
             with financial reports, to looking at vast amounts of data to find and solve
             problems, all the way to creating and improving information systems, I would
             be more then grateful to be given the chance to any of these.
-    </div>
-
-  </body>
+          </p>
+          <br>
+          <p>
+            For this Proposal I used the shiny apps package in R. Some features such
+            as HTML, and CSS primairly do not mix entirely well on this platform. However,
+            I chose this platform due to its great nature of making interactive visualizations,
+            and its easy ability to host the program online.
+          </p>
+    </body>
+  </div>
 </html>

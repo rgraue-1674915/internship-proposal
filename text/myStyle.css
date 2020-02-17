@@ -1,0 +1,22 @@
+@font-face {
+  font-family: headerFont;
+  src: url("../fonts/Raleway-Black.ttf");
+}
+@font-face {
+  font-family: bodyFont
+  src:url("../fonts/Raleway-ExtraLight.ttf");
+}
+
+h2 {
+  font-family: headerFont;
+  font-size: 38px;
+}
+
+h3 {
+  font-family: headerFont;
+  font-size: 28px;
+}
+
+p {
+  font-family: bodyFont;
+}

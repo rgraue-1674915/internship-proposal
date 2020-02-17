@@ -2,7 +2,9 @@
 title: "report_bottom"
 author: "Ryan Graue"
 date: "2/7/2020"
-output: html_document
+output: 
+  html_output:
+    css: myStyle.css
 ---
 
 
