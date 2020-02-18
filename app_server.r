@@ -12,7 +12,8 @@ server <- function(input, output, session) {
   # establishes sidebar and menu items to be put in sidebar
   output$sidebarpanel <- renderUI({
     sidebarMenu(
-      menuItem("Main Page", tabName = "Home", icon = icon("dashboard"), selected = TRUE),
+      menuItem("Main Page", tabName = "Home", selected = TRUE),
+      menuItem("Aboout Me", tabName = "about"),
       menuItem("School", tabName = "school"),
       menuItem("Mock Report", tabName = "report"),
       menuItem("My Projects", tabName = "projects")
@@ -59,7 +60,15 @@ server <- function(input, output, session) {
                      alt = "Transcript")
               }, deleteFile = F)
              
-      )
+      ),
+      tabItem(tabName = "about",
+              includeHTML("text/about_me.html"),
+              renderImage({
+                list(src = "imgs/fam.jpg",
+                     contentType = "image/png",
+                     alt = "Transcript")
+              }, deleteFile = F)
+              )
     )
   })
   

@@ -1,4 +1,6 @@
 ---
+title: "report"
+author: "Ryan Graue"
 output:
    html_document:
       css: myStyle.css

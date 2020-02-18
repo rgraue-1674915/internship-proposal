@@ -5,8 +5,8 @@ account: rgraue-1674915
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1780275
-bundleId: 2805825
+bundleId: 2807581
 url: https://rgraue-1674915.shinyapps.io/internship-proposal/
-when: 1581925956.07095
+when: 1581977775.47954
 asMultiple: FALSE
 asStatic: FALSE
