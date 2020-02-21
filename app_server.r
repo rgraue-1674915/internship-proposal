@@ -1,7 +1,5 @@
 library(knitr)
 
-source("scripts/mock_report.R")
-
 #knits the rmd files for an outputable object for shiny apps (HTML)
 rmdfiles <- c("text/report.Rmd", "text/report_bottom.Rmd")
 sapply(rmdfiles, knit, quiet = T)
@@ -66,6 +64,8 @@ server <- function(input, output, session) {
               renderImage({
                 list(src = "imgs/fam.jpg",
                      contentType = "image/png",
+                     width = 500,
+                     height = 500,
                      alt = "Transcript")
               }, deleteFile = F)
               )
